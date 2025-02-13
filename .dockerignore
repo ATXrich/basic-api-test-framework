@@ -1,4 +1,3 @@
-secrets.ini
 .gitgnore
 venv/
 .pytest_cache/
@@ -11,4 +10,3 @@ Dockerfile
 *.log
 **/.pytest_cache/
 Dockerfile
-
