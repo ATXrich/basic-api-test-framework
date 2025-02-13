@@ -1,6 +1,10 @@
 secrets.ini
-reports/
+*.html
+*.log
 venv/
 .pytest_cache/
-__pycache__/
+**/__pycache__/
 .DS_Store
+*.pyc
+.vscode
+.idea
