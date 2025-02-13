@@ -5,14 +5,15 @@ Constant values to be used across all tests
 import requests
 import logging
 import re
+import os
 
 
 SESSION = requests.Session()
-APP_URL = 'http://host.docker.internal:8080'
-ADMIN_USER = 'admin'
-ADMIN_PASSWORD = 'admin'
-
 LOG = logging.getLogger()
+
+APP_URL = os.getenv('APP_URL', '')
+ADMIN_USER = os.getenv('ADMIN_USER', '')
+ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', '')
 
 class HideSensitiveInfoFilter(logging.Filter):
     def filter(self, record):
