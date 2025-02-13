@@ -10,3 +10,4 @@ Dockerfile
 *.log
 **/.pytest_cache/
 Dockerfile
+secrets.ini
