@@ -8,7 +8,7 @@ import re
 
 
 SESSION = requests.Session()
-APP_URL = 'http://localhost:8080'
+APP_URL = 'http://host.docker.internal:8080'
 ADMIN_USER = 'admin'
 ADMIN_PASSWORD = 'admin'
 

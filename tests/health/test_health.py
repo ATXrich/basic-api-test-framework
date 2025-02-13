@@ -1,8 +1,9 @@
 import pytest
-import requests
+from config import APP_URL, SESSION, LOG
 
 def test_health():
-    response = requests.get("http://localhost:8080/health")
+    LOG.info('test_health()')
+    response = SESSION.get(f'{APP_URL}/health', timeout=10)
     assert response.ok
 
     
